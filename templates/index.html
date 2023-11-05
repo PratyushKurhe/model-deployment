@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Text Translator</h1>
+    <div>
+        <form method="post" action="/predict">
+            <textarea rows="12" cols="60" name="content" placeholder="Enter your text here"
+                autocomplete="off">{{ text }}</textarea>
+            <div>
+                <button type="submit">
+                    Button
+                </button>
+                <a href="/">Reset</a>
+            </div>
+        </form>
+
+    </div>
+    <div>
+       
+        <h2 style="color: greenyellow">{{translation}}</h2>
+       
+        <!-- <p id="display"></p> -->
+    </div>
+</body>
+</html>
