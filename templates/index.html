@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Language Translator</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            button{
+                background-color: blue;
+                color:white;
+            }
+        </style>
+    </head>
 <body>
     <h1>Text Translator</h1>
-    <div>
+    <div style="justify-content:center">
         <form method="post" action="/predict">
             <textarea rows="12" cols="60" name="content" placeholder="Enter your text here"
                 autocomplete="off">{{ text }}</textarea>
@@ -17,7 +29,7 @@
     </div>
     <div>
        
-        <h2 style="color: greenyellow">{{translation}}</h2>
+        <h2 style="color: rgb(9, 9, 9)">{{translation}}</h2>
        
         <!-- <p id="display"></p> -->
     </div>
